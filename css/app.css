@@ -85,7 +85,7 @@ label {
 }
 
 .collection.empty {
-  height: 180px;
+  height: 120px;
   background-color: #ddd;
   position: relative;
   font-size: 115%;
