@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My ToDo List App - © Omezibe Obioha</title>
+  <link rel="stylesheet" href="css/materialize.min.css">
+  <link rel="stylesheet" href="css/app.css">
+  <link rel="stylesheet" href="css/la-font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="container">
+    <div class="row">
+      <div class="col s12">
+        <div id="main" class="card z-depth-2">
+          <div class="card-content">
+            <span class="card-title">ToDo List App</span>
+            <div class="row">
+              <div class="input-field col s12">
+                <i class="material-icons prefix fa fa-edit"></i>
+                <input type="text" name="todo" id="todo">
+                <label for="todo" id="label">New ToDo</label>
+              </div>
+              <span class="add-todo btn right" tabindex="1">Add ToDo</span>
+            </div>
+          </div>
+          <hr class="styled">
+
+          <div class="card-content">
+            <h5 class="card-title">ToDo</h5>
+            <div class="row">
+              <div class="input-field col s12">
+                <i class="material-icons prefix fa fa-search"></i>
+                <input type="text" name="filter" id="filter">
+                <label for="filter">Filter ToDo</label>
+              </div>
+              <ul class="collection empty"></ul>
+              <span class="clear-todo btn black right" tabindex="1">Clear ToDo</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Edit Modal -->
+  <div id="edit-modal" class="modal">
+    <div class="modal-content">
+      <div class="input-field">
+        <textarea class="materialize-textarea" name="edit" id="edit"></textarea>
+        <label for="edit" id="label">Edit ToDo</label>
+      </div>
+    </div>
+    <div class="modal-footer">
+        <span class="modal-action modal-close btn black">Cancel</span>
+        <span class="modal-action btn save-edit">Save</span>
+    </div>
+  </div>
+
+  <!-- Clear All ToDo Modal -->
+  <div id="clear-modal" class="modal">
+    <div class="modal-content">Are you sure you want to clear all your todo entries? This process is irrevocable!</div>
+    <div class="modal-footer center-align">
+        <span class="modal-action modal-close btn black">Cancel</span>
+        <span class="modal-action btn actualclear-todo">Sure</span>
+    </div>
+  </div>
+
+  <footer>
+    <p class="footer-copyright">© <a href="https://linkedin.com/in/omezibe-obioha/" target="_blank" rel="noopener noreferrer">Omezibe Obioha</a>. Made with <span class="strikethrough">love</span> grit & a knack for debugging for the #1 Coding Task of <a href="https://genesystechhub.com/" target="_blank" rel="noopener noreferrer">Genesys Tech Hub</a>'s Learnable '20 Internship. You can follow me on <button onclick="window.open('https://twitter.com/intent/follow?screen_name=o_obioha', '_blank')" class="twitter-link"><i class="fa fa-twitter"></i> Twitter</button></p>
+  </footer>
+  <script src="js/jquery.3.3.1.min.js"></script>
+  <script src="js/materialize.min.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
