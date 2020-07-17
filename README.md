@@ -71,7 +71,6 @@ There is also a public demo available at: http://todo-app.omzi.repl.co/
 │   ├── screenshots
 │   │   ├── 1.png
 │   │   ├── 2.png
-│   │   ├── 3.png
 ├── LICENSE.txt
 ├── README.md
 ├── index.html
