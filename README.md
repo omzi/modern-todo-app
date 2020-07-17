@@ -75,7 +75,7 @@ There is also a public demo available at: http://todo-app.omzi.repl.co/
 ```
 
 ## Contribution
-If you want to contribute to the app, please make a pull request or send your files to me via e-mail [obiohaomezibe@gmail.com](mailto:obiohaomezibe@gmail.com) as an attachment.
+If you want to contribute to the app, please [make a pull request](https://help.github.com/en/articles/creating-a-pull-request) or send your files to me via e-mail [obiohaomezibe@gmail.com](mailto:obiohaomezibe@gmail.com) as an attachment.
 
 Your contribution is much appreciated. Thank you
 
