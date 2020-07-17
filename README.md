@@ -39,8 +39,6 @@ A slick, modern todo app to manage personal todo list with CRUD features &amp; l
 <br>
 ![Screenshot 2](https://raw.github.com/omzi/modern-todo-app/master/screenshots/2.png)
 <br>
-![Screenshot 3](https://raw.github.com/omzi/modern-todo-app/master/screenshots/3.jpg)
-<br>
 ![Screenshot 4](https://raw.github.com/omzi/modern-todo-app/master/screenshots/4.png)
 
 
@@ -70,8 +68,13 @@ There is also a public demo available at: http://todo-app.omzi.repl.co/
 │   │   ├── app.js
 │   │   ├── jquery.3.3.1.min.js
 │   │   ├── materialize.min.js
-├── index.html
+│   ├── screenshots
+│   │   ├── 1.png
+│   │   ├── 2.png
+│   │   ├── 3.png
+├── LICENSE.txt
 ├── README.md
+├── index.html
 ```
 
 ## Contribution
