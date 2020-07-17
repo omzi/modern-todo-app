@@ -7,7 +7,7 @@
 ![](https://img.shields.io/github/release/omzi/modern-todo-app.svg)
 ![](https://img.shields.io/github/repo-size/omzi/modern-todo-app)
 ![](https://img.shields.io/github/issues/omzi/modern-todo-app.svg)
-![](https://img.shields.io/github/license/omzi/modern-todo-app)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 ![](https://img.shields.io/twitter/follow/o_obioha.svg?style=social&label=@o_obioha)
 
 </div>
