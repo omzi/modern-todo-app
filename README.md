@@ -1,8 +1,13 @@
 <h2 align="center">A slick, modern todo web app😎</h2>
 
-<div align="center">
-![](https://img.shields.io/github/stars/omzi/modern-todo-app.svg)![](https://img.shields.io/github/forks/omzi/modern-todo-app.svg)![](https://img.shields.io/github/release/omzi/modern-todo-app.svg)![](https://img.shields.io/github/repo-size/omzi/modern-todo-app)![](https://img.shields.io/github/issues/omzi/modern-todo-app.svg)![](https://img.shields.io/github/license/omzi/modern-todo-app)![](https://img.shields.io/twitter/follow/o_obioha.svg?style=social&label=@o_obioha)
-</div>
+![](https://img.shields.io/github/stars/omzi/modern-todo-app.svg)
+![](https://img.shields.io/github/forks/omzi/modern-todo-app.svg)
+![](https://img.shields.io/github/release/omzi/modern-todo-app.svg)
+![](https://img.shields.io/github/repo-size/omzi/modern-todo-app)
+![](https://img.shields.io/github/issues/omzi/modern-todo-app.svg)
+![](https://img.shields.io/github/license/omzi/modern-todo-app)
+![](https://img.shields.io/twitter/follow/o_obioha.svg?style=social&label=@o_obioha)
+
 
 ## Table of Content
 - [About](#about)
