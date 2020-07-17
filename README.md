@@ -35,6 +35,10 @@ A slick, modern todo app to manage personal todo list with CRUD features &amp; l
 - Compatible with all major browsers
 
 ## Screenshots
+![Screenshot 1](https://raw.github.com/omzi/modern-todo-app/master/screenshots/1.png)
+![Screenshot 2](https://raw.github.com/omzi/modern-todo-app/master/screenshots/2.png)
+![Screenshot 3](https://raw.github.com/omzi/modern-todo-app/master/screenshots/3.jpg)
+![Screenshot 4](https://raw.github.com/omzi/modern-todo-app/master/screenshots/4.png)
 
 
 ## Demo
