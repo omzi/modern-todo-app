@@ -4,6 +4,7 @@ body {
   background-color: #9b59b6;
   background-image: radial-gradient(#000 1px, transparent 1px);
   background-size: calc(10 * 1px) calc(10 * 1px);
+  -webkit-tap-highlight-color: transparent;
 }
 
 #main {

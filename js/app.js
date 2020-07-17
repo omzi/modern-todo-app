@@ -18,7 +18,7 @@ let currentDeletedToDo = "";
 // TODO DELETE STATUS
 let deleteStatus = 0;
 // SAVE CHANGE STATUS FOR BROWSER POPUP
-saveChangeStatus = 0;
+let saveChangeStatus = 0;
 
 const loadEventListeners = () => {
   // DOM LOADED EVENT
@@ -42,9 +42,14 @@ const loadEventListeners = () => {
 }
 
 // ADD ENTER KEY EVENT LISTENER TO ADD TODO
+let enterTimer = 1;
 addEventListener('keydown', (e) => {
-  if ((e.key === "Enter") && toDoInput.matches(":focus")) {
+  if ((e.key === "Enter") && toDoInput.matches(":focus") && enterTimer) {
+    enterTimer = 0;
     addToDo();
+    setTimeout(() => {
+      enterTimer = 1;
+    }, 2000)
   }
 });
 
@@ -85,12 +90,18 @@ const loadToDo = () => {
 // ADD TODO IN DOM AND LOCAL STORAGE
 const addToDo = () => {
   let toDo = toDoInput.value;
+  let ToDos;
+  // CHECK IF "TODO" LOCALSTORAGE ITEM IS AN EMPTY ARRAY OR NULL
+  if (localStorage.getItem(':ToDo') === null || (JSON.parse(localStorage.getItem(':ToDo')).length === 0)) {
+    ToDos = [];
+  } else {
+    ToDos = JSON.parse(localStorage.getItem(':ToDo'));
+  }
 
-  // CHECK IF SOME CURIOUS USER LIKE ME ENTERED CHARACTERS NOT SPACES
   if (!/\S/.test(toDo)) {
     addToDoButton.classList.add("disabled");
-    M.toast({html: 'Enter a todo', classes: 'red headShake animated', displayLength: 2000 ,completeCallback: function(){addToDoButton.classList.remove("disabled")}});
-  } else {
+    M.toast({html: 'Enter a todo', classes: 'red headShake animated', displayLength: 2000, completeCallback: function(){addToDoButton.classList.remove("disabled")}});
+  } else if (!(ToDos.indexOf(toDo)+1)) {
     // REMOVE EMPTY CLASS FROM LIST ELEMENT
     toDoList.classList.remove("empty");
     // CREATE LI ELEMENT
@@ -119,6 +130,9 @@ const addToDo = () => {
     M.updateTextFields();
     // TOAST TODO ADDED
     M.toast({html: 'Your todo has been added', classes: 'green', displayLength: 2000});
+  } else {
+    addToDoButton.classList.add("disabled");
+    M.toast({html: 'A duplicate todo exists ;(', classes: 'red headShake animated', displayLength: 2000, completeCallback: function(){addToDoButton.classList.remove("disabled")}});
   }
 }
 
@@ -166,7 +180,7 @@ const saveEdit = () => {
       modalInstance.close();
       document.body.style.overflow = "auto";
       // UPDATE LOCAL STORAGE
-      ToDos = JSON.parse(localStorage.getItem(':ToDo'));
+      let ToDos = JSON.parse(localStorage.getItem(':ToDo'));
       ToDos.forEach((toDo, index) => {
         if (toDo === currentToDo) {
           ToDos[index] = editInput.value;
@@ -348,6 +362,8 @@ window.onbeforeunload = (e) => {
     return;
   }
 };
+
+console.clear();
 
 var consoleStyle = [
   'background-color: #9b59b6'
